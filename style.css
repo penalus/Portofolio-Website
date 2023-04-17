@@ -2,10 +2,7 @@ body {
     margin: 0;
 }
 
-nav {
-    background-color: #333;
-}
-
+/* Dropdown navigation */
 .flex{
     display: flex;
 }
@@ -71,4 +68,58 @@ nav {
 
 .show {
     display: block;
+}
+
+/* Message Generator */
+.mg-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: rgb(216, 216, 216);
+    margin: 9rem auto 0;
+}
+
+.mg-heading {
+    text-align: center;
+}
+
+.mg-box {
+    margin: 0 auto;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.mg-btn {
+    margin: 20px auto;
+    width: 170px;
+    height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.151);
+}
+
+.mg-btn:hover{
+    background-color: #fafafa;
+}
+
+.mg-btn:active {
+    box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.195);
+}
+
+#mg-message {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mg-about {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    margin: 2rem auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
