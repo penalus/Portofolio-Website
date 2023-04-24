@@ -41,4 +41,4 @@ function messageGenerator() {
 
 messageGenerator();
 
-    
+/* Error message for invalid form input */
