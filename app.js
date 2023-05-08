@@ -42,3 +42,8 @@ function messageGenerator() {
 messageGenerator();
 
 /* Error message for invalid form input */
+
+/* Function for color-styling when un-checking checkbox with id of yes in HTML form */
+let clicked = 0;
+let spanClick = document.getElementById("check");
+
