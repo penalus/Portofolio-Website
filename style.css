@@ -2,6 +2,9 @@ body {
     margin: 0;
 }
 
+html, body {
+    min-height: 100vh;
+}
 
 #temporary {
     width: 1px;
@@ -18,6 +21,8 @@ body {
     overflow: hidden;
     background-color: #333;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 5px 28px 0 rgb(0 0 0 / 10%);
+    
 }
 
 .navbar a {
@@ -43,11 +48,15 @@ body {
     padding: 0.9rem 1rem;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+}
+
+/* Compensating for the dropdown buttons wrong position on some of the pages */
+.navbar .dropdown .dropbtn-adjust {
+ padding: 0.5rem 1rem;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: #dc9e9e;
+    background: #b4c2d4;
 }
 
 .dropdown-content {
@@ -76,34 +85,49 @@ body {
     display: block;
 }
 
+/* Header */
+header {
+    text-align: center;
+    padding: 1em;
+    background: #b4c2d4;
+    margin-bottom: 1em;
+    padding-bottom: 10rem;
+    clip-path: polygon(50% 0%, 100% 0, 100% 55%, 50% 100%, 0 55%, 0 0);
+}
+
 /* About section */
 .main-heading {
     margin-bottom: 40px;
     font-size: 30px;
+    cursor: pointer;
 }
 
-.about-wrapper {
-    padding: 0 55px 0 0;
-    display: flex;
-    justify-content: space-evenly;
-
+.main-heading:hover {
+    text-decoration: underline rgb(0, 0, 0);
 }
 
 .about-wrapper p {
     font-size: 1.3rem;
 }
 
-.about-wrapper .p {
-    width: 450px;
+.about-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
+.about-wrapper .p {
+    width: 75%;
+}
 
-.about-wrapper img {
-    max-width: 150px;
-    height: 150px;
-    padding: 55px 0 0 20px;
+.hr {
+    width: 45%;
+    color: #9a9a9a5b;
 }
 /* Project card section */
+#c {
+    display: none;
+}
+
 .card {
     display: flex;
     max-width: 320px;
@@ -163,6 +187,10 @@ body {
     text-align: center;
 }
 
+#projects, #skills {
+    margin-bottom: 40px;
+}
+
 /* Skill Section(Font Awesome) */
 .fa, .fa-brands, .fa-solid {
     font-size: 50px;
@@ -183,8 +211,8 @@ body {
 .mg-container {
     width: 500px;
     height: 300px;
-    border: 1px solid black;
-    background-color: rgb(216, 216, 216);
+    border: 1.5px solid rgba(0, 0, 0, 0.074);
+    background: #b4c2d4;
     margin: 9rem auto 0;
 }
 
@@ -208,19 +236,17 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.151);
 }
 
 .mg-btn:hover{
-    background-color: #fafafa;
+    box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.215);
 }
 
 .mg-btn:active {
-    width: 167px;
-    height: 28px;
-    box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.195);
+    box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.314);
 }
 
 #mg-message {
@@ -371,12 +397,10 @@ input:invalid:focus {
 
 
 
-
 /* FOOTER */
 footer {
     text-align: center;
     font-family: 'Manrope', sans-serif;
-
 }
 
 #author {
@@ -388,4 +412,34 @@ footer {
     color: #9abff0
 }
 
+footer p span::after, footer p span::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration: line-through;
+    color: #7d7d7d97;
+}
 
+footer p span i::before, footer p span i::after {
+    content: "\00a0\00a0\00a0";
+}
+
+/* TEST */
+#test {
+    text-align: center;
+}
+
+#test-text {
+    display: none;
+    transition: ease-in 2s;
+}
+
+#test-wrapper {
+    height: 100px;
+}
+/* TEST */
+
+
+
+
+
+
+/* MEDIA QUERIES */

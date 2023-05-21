@@ -6,25 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fcd0ed6868.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
-        <header></header>
         <nav>
             <div class="navbar flex">
-                <a href="index.html">Home</a>
+                <a href="/index.html">Home</a>
                 <a href="#">Read Me</a>
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="dropDown()">Projects
+                    <button class="dropbtn" onclick="dropDown()">Projects                         
                         <i class="fas fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="dropDownContent">
                         <a href="message-generator.html">Message Generator</a>
+                        <a href="forms.html">HTML form</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <header>
+            <img src="" class="logo">
+            <h1>Solar Ipsum Dolar Meshda</h1>
+            <p>Lorem ipsum dolor sit amet dal siet.</p>
+        </header>
         <div id="temporary"></div>
         <main>
             <section id="about">
@@ -36,13 +42,24 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
                     qui officia deserunt mollit anim id est laborum.
                     </p></div>
-                    <img src="/Resources/Images/smiley.png">
+                </div>
+                <hr class="hr">
+            </section>
+            <div id="temporary"></div>
+            <!-- TEST -->
+            <section id="test">
+                <div id="test-wrapper">
+                    <h2 id="t">TEST HEADING</h2>
+                    <button id="test-button" onclick="testFunction()">Show Test</button>
+                    <p id="test-text">Lorem Ipsum</p>
                 </div>
             </section>
             <div id="temporary"></div>
+            <!-- TEST -->
             <section id="projects">
-                <h2 class="main-heading">Projects</h2>
-                <div class="cards-wrapper">
+                <h2 class="main-heading" id="mainHeading" onclick="toggleProjects()" >Show Projects <span class="fas fa-caret-down"></span></h2>
+                <section id="c">
+                <div class="cards-wrapper" id="cardsWrapper">
                     <div class="card">
                         <div class="card-img img-one"></div>
                         <h2>Message Generator</h2>
@@ -81,6 +98,7 @@
                     </div>
                 </div>
             </section>
+            </section>
             <div id="temporary"></div>        
             <section id="skills">
                 <h2 class="main-heading">Skills</h2>
@@ -95,7 +113,8 @@
                 </div>
             </section>
         </main>
-        <footer><p class="foot">Made by <em><a href="https://github.com/penalus" id="author">penalus</a></em></p></footer>
+        <div id="temporary"></div>
+        <footer><p class="foot"><span><i>Made by <em><a href="https://github.com/penalus" id="author">penalus</a></em></i></span></p></footer>
   <script src="/app.js"></script>
     </body>
 </html>

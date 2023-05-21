@@ -41,9 +41,49 @@ function messageGenerator() {
 
 messageGenerator();
 
-/* Error message for invalid form input */
 
-/* Function for color-styling when un-checking checkbox with id of yes in HTML form */
-let clicked = 0;
-let spanClick = document.getElementById("check");
+// TEST
+function testFunction() {
+let t = document.getElementById("test-button");
+let testText = document.getElementById("test-text");
 
+
+
+    //toggle text
+    if(testText.style.display === "block") {
+        testText.style.display = "none";
+    } else {
+        testText.style.display = "block";
+    }
+
+
+    //toggle show/hide text on button
+    if(testText.style.display === "none") {
+        t.innerHTML = "Show Test";
+    } else {
+        t.innerHTML = "Hide Test";
+    }
+}
+
+
+// Projects show/hide
+function toggleProjects() {
+    let mainHeading = document.getElementById("mainHeading");
+    let cardSection = document.getElementById("c");
+    
+
+    if(cardSection.style.display === "block") {
+        cardSection.style.display = "none";
+    } else {
+        cardSection.style.display = "block";
+    }
+
+    let i = document.createElement('i');
+    i.style.className = 'fas fa-caret-down';
+    
+    if(cardSection.style.display === "none") {
+        mainHeading.innerHTML = '<h2 class="main-heading">Show Projects<i class="fas fa-caret-down"></i></h2>';
+    } else {
+        mainHeading.innerHTML = '<h2 class="main-heading">Hide Projects<i class="fas fa-caret-down"></i></h2>';
+    }
+}

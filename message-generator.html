@@ -8,22 +8,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header></header>
         <nav>
             <div class="navbar flex">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#">Read Me</a>
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="dropDown()">Projects
+                    <button class="dropbtn dropbtn-adjust" onclick="dropDown()">Projects
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="dropDownContent">
                         <a href="message-generator.html">Message Generator</a>
-                        <a href="forms.html">HTML form</a>
+                        <a href="forms.html">HTML Form & Validation</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <div id="temporary"></div>
         <main>
             <div class="mg-container">
                 <h2 class="mg-heading">Random Message Generator</h2>
@@ -37,7 +37,7 @@
                     truly random the messages are made up of three different pieces of data that come together to form a random message. </p>
             </div>
         </main>
-        <footer></footer>
+        <footer><p class="foot"><span><i>Made by <em><a href="https://github.com/penalus" id="author">penalus</a></em></i></span></p></footer>
         <script src="/app.js"></script>
     </body>
 </html>
